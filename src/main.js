@@ -9,4 +9,4 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.style.backgroundColor = "#eef4ff";
     });
   }
-});
+}); 
