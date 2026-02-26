@@ -3,9 +3,6 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
 });
 
-module.exports = ({ env }) => ({
-  plugins: [
-    require("autoprefixer"),
-    ...(env === "production" ? [purgecss] : []),
-  ],
-});
+module.exports = {
+  plugins: [require("autoprefixer")],
+};
